@@ -20,7 +20,7 @@ WITH TablePivot AS (
                             FROM PD2021_WK03_BIRMINGHAM
                             UNION
                             SELECT *
-                                    ,'BManchester' AS store
+                                    ,'Manchester' AS store
                             FROM PD2021_WK03_MANCHESTER
                             ) AS w32021
                     UNPIVOT(sales FOR age_product IN ("New_-_Saddles", "New_-_Mudguards","New_-_Wheels","New_-_Bags","Existing_-_Saddles","Existing_-_Mudguards","Existing_-_Wheels","Existing_-_Bags") )
